@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/landing/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/d19926530a.js" crossorigin="anonymous"></script>
+    <title>Contact US</title>
+  </head>
+  <body>
+    <main>
+      <!--NAVBAR-->
+
+      <nav>
+        <div class="logo">
+          <a href="../index.html"><img src="../images/landing/logo.png" alt="book logo" /></a>
+        </div>
+        <div class="navbar-list">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/gallery.html">Gallery</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav__icons">
+          <a href="#"><img src="../images/landing/profile.png" alt="profile logo" /></a>
+          <a href="#"><img src="../images/landing/cart.png" alt="cart logo" /></a>
+        </div>
+      </nav>
+
+      <!--CONTACT FORM-->
+
+      <div class="contact__container">
+        <div class="form__container">
+          <form action="">
+            <label for="name" class="label"> First name *</label>
+            <input type="text" name="name" id="name" class="input__field" required autofocus />
+            <label for="last-name" class="label"> Last Name *</label>
+            <input type="text" name="last-name" id="last-name" class="input__field" required />
+            <label for="email" class="label">Email *</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              required
+              size="30"
+              class="input__field border__bottom__input"
+            />
+            <label for="type__request" class="label">Type of Request *</label>
+            <select name="type__request" id="type__request" class="input__field" required>
+              <option value="empty">...</option>
+              <option value="User">User Account</option>
+              <option value="Cancel">Cancel Order</option>
+              <option value="Order">Order Issue</option>
+              <option value="Partnership">Partnership</option>
+            </select>
+            <label for="message" class="label"> Message *</label>
+            <textarea
+              name="meesage"
+              id="message"
+              cols="30"
+              rows="3"
+              required
+              class="textarea"
+            ></textarea>
+            <label for="additional-message" class="label">Additional Details</label>
+            <textarea
+              name="addtional-message"
+              id="addtional-message"
+              cols="30"
+              rows="4"
+              class="textarea"
+            ></textarea>
+            <input type="submit" value="Send Message" class="btn" />
+          </form>
+        </div>
+        <div class="information__container">
+          <h3 class="information__title">How we can help?</h3>
+          <p class="information__paragraph">
+            Please select a topic below related to your inquire. If you don't find what you need,
+            fill out our contact form.
+          </p>
+
+          <div class="accordion__container">
+            <div>
+              <input
+                type="radio"
+                name="contact__accordion"
+                id="accordion1"
+                class="accordion__input"
+                checked
+              />
+              <label for="accordion1" class="accordion__label"
+                >Cancel an Order <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <div class="accordion__content">
+                <p>
+                  In the interest of processing your order as quickly as possible, there is only a
+                  brief window of time where you will be able to modify or cancel your order after
+                  it has been placed.
+                  <br />
+                  <br />
+                  Our fulfillment system will continue to process the order as you attempt to modify
+                  it, which may result in your changes not being applied.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="contact__accordion"
+                id="accordion2"
+                class="accordion__input"
+              />
+              <label for="accordion2" class="accordion__label"
+                >Delivery Expectations <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <div class="accordion__content">
+                <p>
+                  We do our best to estimate delivery dates for your purchase. The estimated date of
+                  delivery of your order and the cost of shipping depends on which Delivery Speed
+                  you select during Checkout, which factors in item availability, processing time,
+                  and transit time.
+                  <br />
+                  <br />
+                  Shipping times shown on website reflect how long the shipment will take to arrive
+                  after it has left the warehouse/shipping facility.
+                  <br />
+                  <br />
+                  Please note: You may receive your items on different days and in multiple boxes.
+                  When your items ship, you will receive a confirmation email with tracking
+                  information you can use to track them online.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="contact__accordion"
+                id="accordion3"
+                class="accordion__input"
+              />
+              <label for="accordion3" class="accordion__label"
+                >Refund and Return Policies <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <div class="accordion__content">
+                <p>
+                  If you're not satisfied with your purchase, you may return it for a refund.
+                  <br />
+                  <br />
+                  We will issue a refund for the purchase price of the item plus any applicable
+                  taxes to your original form of payment for items returned within 30 days after the
+                  delivery date.
+                  <br />
+                  <br />
+                  All returned items must be in their original condition; shrink-wrapped or sealed
+                  products must be unopened. Shipping fees are not refunded.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+      <footer>
+        <div class="footer__card1">
+          <a href="../index.html"><img src="../images/landing/logo.png" alt="logo" /></a>
+        </div>
+        <div class="footer__card2">
+          <a class="footer__a" href="../pages/contact.html"><h4>Contact Us</h4></a>
+        </div>
+        <div class="footer__card3">
+          <a class="footer__a" href="../pages/about.html"><h4>About Us</h4></a>
+        </div>
+        <div class="footer__card4">
+          <h4 class="footer__a">Follow us</h4>
+          <div>
+            <a href="#"><img src="../images/landing/facebook.png" alt="facebook icon" /></a>
+            <a href="#"><img src="../images/landing/instagram.png" alt="instagram icon" /></a>
+            <a href="#"><img src="../images/landing/twitter.png" alt="twitter icon" /></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

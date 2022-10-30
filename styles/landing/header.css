@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 270vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 70vh;
+    margin: 15px 0 15px 0;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px 0px 50px #64d810;
+    background-image: url(../../images/landing/header_img1.jpg);
+    background-size: 100% 100%;
+    animation: slider 35s infinite;
+}
+
+@keyframes slider {
+    0% { background-image: url(../../images/landing/header_img1.jpg);
+        background-size: 100% 100%;
+    }
+    16% { background-image: url(../../images/landing/header_img1.jpg);
+        background-size: 100% 100%;
+    }
+    32% { background-image: url(../../images/landing/header_img2.jpg);
+        background-size: 100% 100%;
+    }
+    48% { background-image: url(../../images/landing/header_img3.jpg);
+        background-size: 100% 100%;
+    }
+    64% { background-image: url(../../images/landing/header_img4.jpg);
+        background-size: 100% 100%;
+    }
+    80% { background-image: url(../../images/landing/header_img5.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 75%;
+    margin-top: 30px;
+    background-color: hsl(78, 36%, 95%);
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 9%;
+}
+
+.logo img {
+    height: 8vh;
+    width: 100%;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list li {
+    display: inline;
+    padding:35px;
+}
+
+.navbar-list a {
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Short Stack', cursive;
+    color: rgb(19, 59, 19);
+    text-decoration: none;
+}
+
+.navbar-list a:hover {
+    color: #64d810;
+}
+
+.nav__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+}
+
+.nav__icons img {
+    height:3vh;
+    width: 100%;
+}
